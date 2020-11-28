@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'AssertRequest_Example' do
+  pod 'AssertRequest', :path => '../'
+
+  target 'AssertRequest_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
