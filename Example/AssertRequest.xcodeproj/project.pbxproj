@@ -28,9 +28,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1FFF54AAFDDA325A3EB0BFE3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1FFF54AAFDDA325A3EB0BFE3 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		28F4ED19FECE20011D833632 /* Pods-AssertRequest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssertRequest_Tests.debug.xcconfig"; path = "Target Support Files/Pods-AssertRequest_Tests/Pods-AssertRequest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		41C9FB444F829AE029404F22 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		41C9FB444F829AE029404F22 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* AssertRequest_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AssertRequest_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -42,7 +42,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		8A03F635A1AA328737CFFA6C /* Pods_AssertRequest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssertRequest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		8D642076F59E0378DD16359C /* AssertRequest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = AssertRequest.podspec; path = ../AssertRequest.podspec; sourceTree = "<group>"; };
+		8D642076F59E0378DD16359C /* AssertRequest.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = AssertRequest.podspec; path = ../AssertRequest.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		A7BC478C5206BC3B1CD724E3 /* Pods_AssertRequest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssertRequest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE134707DD9C85554090A0D8 /* Pods-AssertRequest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssertRequest_Example.release.xcconfig"; path = "Target Support Files/Pods-AssertRequest_Example/Pods-AssertRequest_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CC9B4BD7BB866B2EF2A0013C /* Pods-AssertRequest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AssertRequest_Example.debug.xcconfig"; path = "Target Support Files/Pods-AssertRequest_Example/Pods-AssertRequest_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,7 +156,6 @@
 				28F4ED19FECE20011D833632 /* Pods-AssertRequest_Tests.debug.xcconfig */,
 				D52670F2035E376834D156D0 /* Pods-AssertRequest_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -507,6 +507,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 28F4ED19FECE20011D833632 /* Pods-AssertRequest_Tests.debug.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -529,6 +530,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D52670F2035E376834D156D0 /* Pods-AssertRequest_Tests.release.xcconfig */;
 			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",

@@ -1,16 +1,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    @IBOutlet weak var resultLabel: UILabel!
+    
+    @IBOutlet weak var resultLabel: UILabel?
 
     let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1")!
     
     @IBAction func didTouchMakeDataRequest() {
-        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+        let request = URLRequest(url: url)
+        let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
             let retrievedData = String(data: data!, encoding: .utf8)!
             DispatchQueue.main.async {
-                self.resultLabel.text = retrievedData
+                self.resultLabel?.text = retrievedData
             }
         }
 
@@ -22,6 +23,6 @@ class ViewController: UIViewController {
     }
     
     @IBAction func didTouchClear() {
-        resultLabel.text = " "
+        resultLabel?.text = " "
     }
 }

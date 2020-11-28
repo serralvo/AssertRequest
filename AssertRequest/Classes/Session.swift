@@ -3,13 +3,14 @@ import Foundation
 class Session {
 
     static let `default` = Session()
-    public var isRecording = false
+    var isRecording = false
     
     // MARK: - Components
     
     let interceptor = DataRequestInterceptor()
     let collector = RequestCollector()
     let differ: Differ
+    let dummyDataTask = URLSessionDataTask.new()
     
     private init() {
         differ = Differ(collector: collector)
