@@ -1,0 +1,16 @@
+PODS:
+  - AssertRequest (0.1.0)
+
+DEPENDENCIES:
+  - AssertRequest (from `../`)
+
+EXTERNAL SOURCES:
+  AssertRequest:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  AssertRequest: 6b7b87869058d40e4984fd81930ae99c2185b469
+
+PODFILE CHECKSUM: e1b0424a816f830247041da1ebf95efb1c65a6fd
+
+COCOAPODS: 1.7.5
