@@ -1,24 +1,27 @@
-//
-//  ViewController.swift
-//  AssertRequest
-//
-//  Created by lucas1295santos on 11/27/2020.
-//  Copyright (c) 2020 lucas1295santos. All rights reserved.
-//
-
 import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+    @IBOutlet weak var resultLabel: UILabel!
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    let url = URL(string: "https://jsonplaceholder.typicode.com/posts/1")!
+    
+    @IBAction func didTouchMakeDataRequest() {
+        let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
+            let retrievedData = String(data: data!, encoding: .utf8)!
+            DispatchQueue.main.async {
+                self.resultLabel.text = retrievedData
+            }
+        }
 
+        task.resume()
+    }
+    
+    @IBAction func didTouchAlamofireRequest() {
+        
+    }
+    
+    @IBAction func didTouchClear() {
+        resultLabel.text = " "
+    }
 }
-
