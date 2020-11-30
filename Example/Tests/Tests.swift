@@ -16,7 +16,7 @@ class Tests: XCTestCase {
     
     
     func test_viewController_makeDataRequest() {
-        AssertRequest.startObserving()
+        AssertRequest.startObserving(recording: true)
         
         ViewController().didTouchMakeDataRequest()
         

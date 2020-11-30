@@ -20,13 +20,17 @@ class Differ {
     
     //todo: throw inexistent file exception
     private func hasDiff(diffable: Diffable) -> Bool {
-        guard let data = fileManager.retrieve(identifier: diffable.identifier) else {
+        guard let recordedRequest = fileManager.retrieve(identifier: diffable.identifier) else {
             return true
         }
         
-        let recordedCurl = String(data: data, encoding: .utf8)
-        let newCurl = diffable.request.curlString
-        
-        return recordedCurl != newCurl
+        do {
+            let newRequest = try Request(urlRequest: diffable.request)
+            return newRequest != recordedRequest
+        } catch {
+            //todo: handle error
+            print(error.localizedDescription)
+            return false
+        }
     }
 }

@@ -4,7 +4,14 @@ class FileManagerHandler {
     
     private let fileManager = FileManager.default
     
-    func store(data: Data, identifier: RequestIdentifier) {
+    private let encoder = JSONEncoder()
+    private let decoder = JSONDecoder()
+    
+    init() {
+        encoder.outputFormatting = .prettyPrinted
+    }
+    
+    func store(request: Request, identifier: RequestIdentifier) {
         let storagePath = makeStoragePath(testName: identifier.testName, file: identifier.file)
         
         if !fileManager.fileExists(atPath: storagePath.path) {
@@ -13,22 +20,28 @@ class FileManagerHandler {
 
         let newDocumentName = "\(identifier.testName).\(identifier.fileExtension)"
         let newDocumentPath = storagePath.appendingPathComponent(newDocumentName)
-
+        
+        
         do {
+            
+            let data = try encoder.encode(request)
             try data.write(to: newDocumentPath)
         } catch {
+            //todo: handle this error
             print(error.localizedDescription)
         }
     }
     
-    func retrieve(identifier: RequestIdentifier) -> Data? {
+    func retrieve(identifier: RequestIdentifier) -> Request? {
         let storagePath = makeStoragePath(testName: identifier.testName, file: identifier.file)
         let targetDocumentName = "\(identifier.testName).\(identifier.fileExtension)"
         let targetDocumentPath = storagePath.appendingPathComponent(targetDocumentName)
         
         do {
-            return try Data(contentsOf: targetDocumentPath)
+            let data = try Data(contentsOf: targetDocumentPath)
+            return try decoder.decode(Request.self, from: data)
         } catch {
+            //todo: handle this error
             print(error.localizedDescription)
             return nil
         }

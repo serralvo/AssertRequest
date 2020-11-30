@@ -4,15 +4,19 @@ class DataRequestInterceptor {
     let fileManager = FileManagerHandler()
     
     func intercept(urlRequest: URLRequest) {
-        guard let data = urlRequest.curlString.data(using: .utf8) else {
-            return print("Error")
+
+        do {
+            let request = try Request(urlRequest: urlRequest)
+            
+            guard Session.default.isRecording == false else {
+                fileManager.store(request: request, identifier: .init())
+                return
+            }
+            
+            Session.default.collector.append(.init(), request: urlRequest)
+        } catch {
+            //todo: handle this error
+            return print(error.localizedDescription)
         }
-        
-        guard !Session.default.isRecording else {
-            fileManager.store(data: data, identifier: .init())
-            return
-        }
-        
-        Session.default.collector.append(.init(), request: urlRequest)
     }
 }

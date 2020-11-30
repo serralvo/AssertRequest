@@ -6,7 +6,7 @@ struct RequestIdentifier {
     init(
         testName: StaticString = #function,
         file: StaticString = #file,
-        fileExtension: String = "curl"
+        fileExtension: String = "json"
     ) {
         self.testName = testName
         self.file = file
