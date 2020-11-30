@@ -4,9 +4,9 @@ struct RequestIdentifier {
     let fileExtension: String
     
     init(
-        testName: StaticString = #function,
-        file: StaticString = #file,
-        fileExtension: String = "json"
+        testName: StaticString,
+        file: StaticString,
+        fileExtension: String
     ) {
         self.testName = testName
         self.file = file

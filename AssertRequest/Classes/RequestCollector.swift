@@ -1,14 +1,38 @@
 class RequestCollector {
     
     private var requests: [Diffable] = []
+    private let fileManager = FileManagerHandler()
+
+    private let identifier: RequestIdentifier
     
-    func append(_ identifier: RequestIdentifier, request: URLRequest) {
-        requests.append(
-            .init(
-                identifier: identifier,
-                request: request
+    init(identifier: RequestIdentifier) {
+        self.identifier = identifier
+    }
+    
+    func append(urlRequest: URLRequest) {
+        
+        do {
+            let request = try Request(urlRequest: urlRequest)
+            
+            guard Session.default.isRecording == false else {
+                fileManager.store(request: request, identifier: identifier)
+                return
+            }
+            
+            requests.append(
+                .init(
+                    identifier: identifier,
+                    request: request
+                )
             )
-        )
+        } catch {
+            //todo: handle
+            print(error.localizedDescription)
+            return
+        }
+        
+
+        
     }
     
     func get() -> [Diffable] {
@@ -22,5 +46,5 @@ class RequestCollector {
 
 struct Diffable {
     let identifier: RequestIdentifier
-    let request: URLRequest
+    let request: Request
 }

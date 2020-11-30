@@ -8,22 +8,23 @@ class Session {
     // MARK: - Components
     
     let interceptor = DataRequestInterceptor()
-    let collector = RequestCollector()
-    let differ: Differ
+    var collector: RequestCollector?
+    var differ: Differ?
     let dummyDataTask = URLSessionDataTask.new()
     
-    private init() {
-        differ = Differ(collector: collector)
-    }
+    private init() {}
     
     // MARK: - Observing
     
-    func startObserving() {
+    func startObserving(identifier: RequestIdentifier) {
+        let collector = RequestCollector(identifier: identifier)
+        differ = Differ(collector: collector)
+        self.collector = collector
         Swizzle.start()
     }
     
     func stopObserving() {
         Swizzle.stop()
-        collector.clear()
+        collector?.clear()
     }
 }
