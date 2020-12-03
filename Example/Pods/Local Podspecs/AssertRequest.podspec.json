@@ -1,0 +1,25 @@
+{
+  "name": "AssertRequest",
+  "version": "0.1.0",
+  "summary": "A short description of AssertRequest.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lucas1295santos/AssertRequest",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lucas1295santos": "lucas1295santos@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/lucas1295santos/AssertRequest.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "AssertRequest/Classes/**/*",
+  "xcconfig": {
+    "FRAMEWORK_SEARCH_PATHS": "$(inherited) $(PROJECT_DIR) $(PLATFORM_DIR)/Developer/Library/Frameworks"
+  }
+}

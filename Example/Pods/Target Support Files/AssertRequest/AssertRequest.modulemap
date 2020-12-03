@@ -1,0 +1,6 @@
+framework module AssertRequest {
+  umbrella header "AssertRequest-umbrella.h"
+
+  export *
+  module * { export * }
+}
