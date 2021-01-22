@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,49 +20,58 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="2w8-Ht-JXT">
+                            <stackView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="1000" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="2w8-Ht-JXT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="92l-RU-Z75">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="181"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
                                         <state key="normal" title="Make a dataTask request"/>
                                         <connections>
                                             <action selector="didTouchMakeDataRequest" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lv4-jd-phm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6d3-mh-hKP">
-                                        <rect key="frame" x="0.0" y="181" width="375" height="181"/>
+                                        <rect key="frame" x="0.0" y="30" width="375" height="30"/>
                                         <state key="normal" title="Make a AlamofireRequest"/>
                                         <connections>
                                             <action selector="didTouchAlamofireRequest" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZDp-3W-mEw"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkl-3x-vbc">
-                                        <rect key="frame" x="0.0" y="362" width="375" height="181.5"/>
+                                        <rect key="frame" x="0.0" y="60" width="375" height="30"/>
                                         <state key="normal" title="clear"/>
                                         <connections>
                                             <action selector="didTouchClear" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TN4-mY-pgN"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Requests results will show here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="dHF-YQ-rBk">
-                                        <rect key="frame" x="0.0" y="543.5" width="375" height="123.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Request result will appear here" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgR-y9-PSN">
+                                        <rect key="frame" x="0.0" y="90" width="375" height="577"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <accessibility key="accessibilityConfiguration">
+                                            <accessibilityTraits key="traits" notEnabled="YES"/>
+                                        </accessibility>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="no"/>
+                                    </textView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="hgR-y9-PSN" secondAttribute="bottom" id="kI3-mH-Td7"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="2w8-Ht-JXT" secondAttribute="trailing" id="HnE-Hb-wFA"/>
+                            <constraint firstItem="2w8-Ht-JXT" firstAttribute="bottom" secondItem="kh9-bI-dsS" secondAttribute="bottomMargin" id="NOZ-pW-KNM"/>
                             <constraint firstItem="2w8-Ht-JXT" firstAttribute="top" relation="lessThanOrEqual" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="lb8-zg-Brk"/>
                             <constraint firstItem="2w8-Ht-JXT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="neK-Yh-yxg"/>
+                            <constraint firstItem="2w8-Ht-JXT" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="topMargin" id="sFJ-SB-38C"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" relation="lessThanOrEqual" secondItem="2w8-Ht-JXT" secondAttribute="bottom" id="wbE-EB-E8N"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="resultLabel" destination="dHF-YQ-rBk" id="HuO-Ke-09u"/>
+                        <outlet property="resultTextView" destination="hgR-y9-PSN" id="6g8-Zc-kI7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -69,4 +79,12 @@
             <point key="canvasLocation" x="138" y="133"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

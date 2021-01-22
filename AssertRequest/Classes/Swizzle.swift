@@ -13,6 +13,7 @@ class Swizzle {
     private let methodsToSwizzle: [MethodSelector] = [
         URLSessionMethodDataTask(),
         URLSessionDataTaskMethodResume(),
+        URLSessionMethodDataTaskUrlSession(),
     ]
     
     func start() {
@@ -43,20 +44,3 @@ class Swizzle {
         }
     }
 }
-
-//        swizzling(
-//            URLSession.self,
-//            #selector(urlSessionInstance._dataTask(with:)),
-//            #selector(urlSessionInstance.dataTask(with:) as (URLRequest) -> URLSessionDataTask)
-//        )
-
-/// swizzle
-/*
- 
-open func dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
-
-open func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask
- 
-             #selector(urlSessionInstance.dataTask(with:) as (URLRequest) -> URLSessionDataTask),
-             #selector(urlSessionInstance._dataTask(with:))
-*/

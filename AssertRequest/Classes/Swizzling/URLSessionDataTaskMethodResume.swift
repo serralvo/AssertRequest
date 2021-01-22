@@ -14,6 +14,6 @@ struct URLSessionDataTaskMethodResume: MethodSelector {
 
 extension URLSessionDataTask {
     @objc open func _resume() {
-        print("RESUME MONXTRO")
+        // no action
     }
 }

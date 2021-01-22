@@ -14,7 +14,6 @@ struct URLSessionMethodDataTask: MethodSelector {
 
 extension URLSession {
     @objc open func _dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
-        print(">> INTERCEPTED")
         Session.default.interceptor.intercept(urlRequest: request)
         return Session.default.dummyDataTask
     }
