@@ -1,4 +1,3 @@
-import Alamofire
 import UIKit
 
 class ViewController: UIViewController {
@@ -17,15 +16,6 @@ class ViewController: UIViewController {
         }
 
         task.resume()
-    }
-    
-    @IBAction func didTouchAlamofireRequest() {
-        AF.request(url).response { response in
-            let retrievedData = String(data: response.data!, encoding: .utf8)!
-            DispatchQueue.main.async {
-                self.resultTextView.text = retrievedData
-            }
-        }
     }
     
     @IBAction func didTouchClear() {

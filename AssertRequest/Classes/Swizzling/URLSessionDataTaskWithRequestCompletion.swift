@@ -1,4 +1,4 @@
-struct URLSessionMethodDataTask: MethodSelector {
+struct URLSessionDataTaskWithRequestCompletion: MethodSelector {
     let urlSessionInstance = URLSession.shared
     
     var originalMethod: Selector {

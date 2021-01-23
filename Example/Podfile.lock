@@ -1,23 +1,16 @@
 PODS:
-  - Alamofire (5.4.1)
   - AssertRequest (0.1.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 5.2)
   - AssertRequest (from `../`)
-
-SPEC REPOS:
-  trunk:
-    - Alamofire
 
 EXTERNAL SOURCES:
   AssertRequest:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
   AssertRequest: 0ac3321afda5b9cb90e8556dbf1d28e51c7925af
 
-PODFILE CHECKSUM: f2df2d741c2dda7d6f52fe1ad2b64d29cb661cae
+PODFILE CHECKSUM: 27841283f6b7d8ceddd0c1386df3dd57a744b287
 
 COCOAPODS: 1.10.0

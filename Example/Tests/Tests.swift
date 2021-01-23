@@ -11,12 +11,4 @@ class Tests: XCTestCase {
         
         AssertRequest.assert()
     }
-    
-    func test_viewController_didTouchAlamofireRequest_expectMakingMatchingRequest() {
-        AssertRequest.startObserving(recording: true)
-        
-        ViewController().didTouchAlamofireRequest()
-        
-        AssertRequest.assert()
-    }
 }

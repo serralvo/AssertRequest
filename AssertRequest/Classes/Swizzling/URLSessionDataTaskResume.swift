@@ -1,4 +1,4 @@
-struct URLSessionDataTaskMethodResume: MethodSelector {
+struct URLSessionDataTaskResume: MethodSelector {
     let uRLSessionDataTaskInstance = URLSessionDataTask()
     
     var originalMethod: Selector {

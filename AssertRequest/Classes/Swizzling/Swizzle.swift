@@ -11,9 +11,11 @@ let swizzling: (AnyClass, Selector, Selector) -> () = { forClass, originalSelect
 class Swizzle {
     
     private let methodsToSwizzle: [MethodSelector] = [
-        URLSessionMethodDataTask(),
-        URLSessionDataTaskMethodResume(),
-        URLSessionMethodDataTaskUrlSession(),
+        URLSessionDataTaskWithURLCompletion(),
+        URLSessionDataTaskWithURL(),
+        URLSessionDataTaskWithRequest(),
+        URLSessionDataTaskWithRequestCompletion(),
+        URLSessionDataTaskResume(),
     ]
     
     func start() {
