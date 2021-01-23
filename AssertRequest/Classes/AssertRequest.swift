@@ -15,9 +15,16 @@ open class AssertRequest {
         )
     }
     
-    open class func assert() {
-        let hasDiff = Session.default.differ?.hasAnyDiff() ?? true
-        XCTAssertFalse(hasDiff)
+    open class func assert(
+        file: StaticString = #file,
+        line: UInt = #line
+    ) {
+        if Session.default.isRecording {
+            XCTFail("Requests recorded! Set recording to false and run again.", file: file, line: line)
+        } else {
+            let hasDiff = Session.default.differ?.hasAnyDiff() ?? true
+            XCTAssertFalse(hasDiff, file: file, line: line)
+        }
         Session.default.stopObserving()
     }
 }
