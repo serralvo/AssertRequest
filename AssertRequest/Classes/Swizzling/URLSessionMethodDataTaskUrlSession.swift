@@ -15,6 +15,6 @@ struct URLSessionMethodDataTaskUrlSession: MethodSelector {
 extension URLSession {
     @objc open func _dataTask(with urlRequest: URLRequest) -> URLSessionDataTask {
         Session.default.interceptor.intercept(urlRequest: urlRequest)
-        return URLSessionDataTask()
+        return Session.default.dummyDataTask
     }
 }

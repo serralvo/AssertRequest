@@ -4,10 +4,15 @@ open class AssertRequest {
     open class func startObserving(
         recording: Bool = false,
         file: StaticString = #file,
-        function: StaticString = #function
+        function: String = #function
     ) {
         Session.default.isRecording = recording
-        Session.default.startObserving(identifier: .init(testName: function, file: file, fileExtension: "json"))
+        Session.default.startObserving(
+            identifier: .init(
+                testName: function,
+                file: file
+            )
+        )
     }
     
     open class func assert() {

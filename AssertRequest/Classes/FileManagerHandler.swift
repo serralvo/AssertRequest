@@ -47,7 +47,7 @@ class FileManagerHandler {
         }
     }
     
-    private func makeStoragePath(testName: StaticString, file: StaticString) -> URL {
+    private func makeStoragePath(testName: String, file: StaticString) -> URL {
         let fileLocation = URL(fileURLWithPath: "\(file)", isDirectory: false)
         let fileName = fileLocation.deletingPathExtension().lastPathComponent
 
