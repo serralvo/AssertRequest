@@ -4,10 +4,18 @@ import AssertRequest
 
 class Tests: XCTestCase {
 
-    func test_viewController_makeDataRequest() {
+    func test_viewController_didTouchMakeDataRequest_expectMakingMatchingRequest() {
         AssertRequest.startObserving(recording: true)
         
         ViewController().didTouchMakeDataRequest()
+        
+        AssertRequest.assert()
+    }
+    
+    func test_viewController_didTouchAlamofireRequest_expectMakingMatchingRequest() {
+        AssertRequest.startObserving(recording: true)
+        
+        ViewController().didTouchAlamofireRequest()
         
         AssertRequest.assert()
     }
