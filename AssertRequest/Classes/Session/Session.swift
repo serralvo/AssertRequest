@@ -24,8 +24,8 @@ class Session {
         swizzle.start()
     }
     
-    func stopObserving() {
+    func stopObserving() throws {
         swizzle.stop()
-        collector?.clear()
+        try collector?.clear()
     }
 }

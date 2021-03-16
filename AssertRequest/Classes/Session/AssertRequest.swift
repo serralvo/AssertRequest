@@ -22,9 +22,13 @@ open class AssertRequest {
         if Session.default.isRecording {
             XCTFail("Requests recorded! Set recording to false and run again.", file: file, line: line)
         } else {
-            let hasDiff = Session.default.differ?.hasAnyDiff() ?? true
-            XCTAssertFalse(hasDiff, file: file, line: line)
+            do {
+                let hasDiff = try Session.default.differ?.hasAnyDiff() ?? true
+                try Session.default.stopObserving()
+                XCTAssertFalse(hasDiff, file: file, line: line)
+            } catch {
+                XCTFail(error.localizedDescription, file: file, line: line)
+            }
         }
-        Session.default.stopObserving()
     }
 }

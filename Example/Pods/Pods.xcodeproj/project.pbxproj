@@ -36,6 +36,7 @@
 		E196D4B054A2988F650DC14AE8527E3D /* Pods-AssertRequest_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76CD44ACC2F80098D4AAD31C90A3A470 /* Pods-AssertRequest_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3B164AFB9DDB95DE17466B7F0F2AB0F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109ED4AFB886E96F5ECCD62166032366 /* Request.swift */; };
 		EADB65C926003F2F00AC72F9 /* Diffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADB65C826003F2F00AC72F9 /* Diffable.swift */; };
+		EADB65CE2600473400AC72F9 /* FileError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADB65CD2600473400AC72F9 /* FileError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +104,7 @@
 		DCD6BFCD55ADF8FB0AD9EF4A1E24371C /* Pods-AssertRequest_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AssertRequest_Example-Info.plist"; sourceTree = "<group>"; };
 		E45914C992F50DB3C7782FBA53DBB253 /* Pods-AssertRequest_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AssertRequest_Tests-dummy.m"; sourceTree = "<group>"; };
 		EADB65C826003F2F00AC72F9 /* Diffable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diffable.swift; sourceTree = "<group>"; };
+		EADB65CD2600473400AC72F9 /* FileError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileError.swift; sourceTree = "<group>"; };
 		EEA8649F00CF66B202FF4445B559151E /* Pods-AssertRequest_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AssertRequest_Example-dummy.m"; sourceTree = "<group>"; };
 		EF97FE2222DFC6A7FACD889C768606A4 /* AssertRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AssertRequest.release.xcconfig; sourceTree = "<group>"; };
 		F746A5C61873BE118C9636EBFA760F43 /* Pods-AssertRequest_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AssertRequest_Example-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				0B8DD05FF683F1272825B71DBB6E70FF /* HTTPRequestParsingError.swift */,
+				EADB65CD2600473400AC72F9 /* FileError.swift */,
 			);
 			name = Error;
 			path = AssertRequest/Classes/Error;
@@ -485,6 +488,7 @@
 				CAA1E8D5D71DB991687CD696E6BC4034 /* RequestIdentifier.swift in Sources */,
 				53FDE7E969697295E55AF383C2490EE3 /* Session.swift in Sources */,
 				C45973B4EABC27243D78A51A6F96AA92 /* Swizzle.swift in Sources */,
+				EADB65CE2600473400AC72F9 /* FileError.swift in Sources */,
 				CABD88A1362787E5A7EBFC3ADD8339D2 /* URLSessionDataTaskResume.swift in Sources */,
 				70E92332D22F2E661D22A8D65A4DFFB2 /* URLSessionDataTaskWithRequest.swift in Sources */,
 				A827E0974CBCB2F7314105DB2B1DAF1C /* URLSessionDataTaskWithRequestCompletion.swift in Sources */,

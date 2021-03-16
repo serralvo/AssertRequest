@@ -30,9 +30,9 @@ class RequestCollector {
         return requests
     }
     
-    func clear() {
+    func clear() throws {
         if Session.default.isRecording {
-            fileManager.store(diffableList: requests)
+            try fileManager.store(diffableList: requests)
             return
         }
         requests.removeAll()

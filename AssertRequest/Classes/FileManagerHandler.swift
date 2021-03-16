@@ -11,7 +11,7 @@ class FileManagerHandler {
         encoder.outputFormatting = .prettyPrinted
     }
     
-    func store(diffableList: [Diffable]) {
+    func store(diffableList: [Diffable]) throws {
         guard diffableList.count > 0 else { return }
         
         let identifier = diffableList.first!.identifier
@@ -30,12 +30,11 @@ class FileManagerHandler {
             let data = try encoder.encode(requests)
             try data.write(to: newDocumentPath)
         } catch {
-            //todo: handle this error
-            print(error.localizedDescription)
+            throw FileError.cantWrite(error: error, documentPath: newDocumentPath.absoluteString)
         }
     }
     
-    func retrieve(identifier: RequestIdentifier) -> [Request]? {
+    func retrieve(identifier: RequestIdentifier) throws -> [Request]? {
         let storagePath = makeStoragePath(testName: identifier.testName, file: identifier.file)
         let targetDocumentName = "\(identifier.testName).\(identifier.fileExtension)"
         let targetDocumentPath = storagePath.appendingPathComponent(targetDocumentName)
@@ -44,9 +43,7 @@ class FileManagerHandler {
             let data = try Data(contentsOf: targetDocumentPath)
             return try decoder.decode([Request].self, from: data)
         } catch {
-            //todo: handle this error
-            print(error.localizedDescription)
-            return nil
+            throw FileError.cantRead(error: error, documentPath: targetDocumentPath.absoluteString)
         }
     }
     

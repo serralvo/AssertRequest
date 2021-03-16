@@ -10,16 +10,16 @@ class Differ {
     
     var fileManager = FileManagerHandler()
     
-    func hasAnyDiff() -> Bool {
+    func hasAnyDiff() throws -> Bool {
         for diffable in collector.get() {
-            if hasDiff(diffable: diffable) { return true }
+            if try hasDiff(diffable: diffable) { return true }
         }
         
         return false
     }
     
-    private func hasDiff(diffable: Diffable) -> Bool {
-        guard let recordedRequests = fileManager.retrieve(identifier: diffable.identifier) else {
+    private func hasDiff(diffable: Diffable) throws -> Bool {
+        guard let recordedRequests = try fileManager.retrieve(identifier: diffable.identifier) else {
             return true
         }
 
