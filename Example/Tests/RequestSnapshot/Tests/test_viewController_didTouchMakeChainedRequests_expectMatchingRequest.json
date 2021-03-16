@@ -2,5 +2,9 @@
   {
     "url" : "https:\/\/jsonplaceholder.typicode.com\/posts\/1",
     "method" : "GET"
+  },
+  {
+    "url" : "https:\/\/jsonplaceholder.typicode.com\/posts\/2",
+    "method" : "GET"
   }
 ]

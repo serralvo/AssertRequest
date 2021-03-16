@@ -11,7 +11,7 @@ class Session {
     let swizzle = Swizzle()
     var collector: RequestCollector?
     var differ: Differ?
-    let dummyDataTask = URLSessionDataTask.new()
+//    let dummyDataTask = URLSessionDataTask.new()
     
     private init() {}
     
