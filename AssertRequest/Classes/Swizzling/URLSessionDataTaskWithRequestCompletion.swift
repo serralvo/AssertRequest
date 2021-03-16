@@ -15,6 +15,7 @@ struct URLSessionDataTaskWithRequestCompletion: MethodSelector {
 extension URLSession {
     @objc open func _dataTask(with request: URLRequest, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
         Session.default.interceptor.intercept(urlRequest: request)
+        completionHandler(nil, nil, nil)
         return Session.default.dummyDataTask
     }
 }

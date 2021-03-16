@@ -11,7 +11,10 @@ class FileManagerHandler {
         encoder.outputFormatting = .prettyPrinted
     }
     
-    func store(request: Request, identifier: RequestIdentifier) {
+    func store(diffableList: [Diffable]) {
+        guard diffableList.count > 0 else { return }
+        
+        let identifier = diffableList.first!.identifier
         let storagePath = makeStoragePath(testName: identifier.testName, file: identifier.file)
         
         if !fileManager.fileExists(atPath: storagePath.path) {
@@ -23,8 +26,8 @@ class FileManagerHandler {
         
         
         do {
-            
-            let data = try encoder.encode(request)
+            let requests = diffableList.map { $0.request }
+            let data = try encoder.encode(requests)
             try data.write(to: newDocumentPath)
         } catch {
             //todo: handle this error
@@ -32,14 +35,14 @@ class FileManagerHandler {
         }
     }
     
-    func retrieve(identifier: RequestIdentifier) -> Request? {
+    func retrieve(identifier: RequestIdentifier) -> [Request]? {
         let storagePath = makeStoragePath(testName: identifier.testName, file: identifier.file)
         let targetDocumentName = "\(identifier.testName).\(identifier.fileExtension)"
         let targetDocumentPath = storagePath.appendingPathComponent(targetDocumentName)
         
         do {
             let data = try Data(contentsOf: targetDocumentPath)
-            return try decoder.decode(Request.self, from: data)
+            return try decoder.decode([Request].self, from: data)
         } catch {
             //todo: handle this error
             print(error.localizedDescription)
@@ -47,7 +50,7 @@ class FileManagerHandler {
         }
     }
     
-    private func makeStoragePath(testName: String, file: StaticString) -> URL {
+    private func makeStoragePath(testName: String, file: String) -> URL {
         let fileLocation = URL(fileURLWithPath: "\(file)", isDirectory: false)
         let fileName = fileLocation.deletingPathExtension().lastPathComponent
 

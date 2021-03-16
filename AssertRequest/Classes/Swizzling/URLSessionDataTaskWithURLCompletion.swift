@@ -16,6 +16,7 @@ extension URLSession {
     @objc open func _dataTaskWithURL(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionDataTask {
         let urlRequest = URLRequest(url: url)
         Session.default.interceptor.intercept(urlRequest: urlRequest)
+        completionHandler(nil, nil, nil)
         return Session.default.dummyDataTask
     }
 }

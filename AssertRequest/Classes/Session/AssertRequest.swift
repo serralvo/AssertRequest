@@ -3,7 +3,7 @@ import XCTest
 open class AssertRequest {
     open class func startObserving(
         recording: Bool = false,
-        file: StaticString = #file,
+        file: String = #file,
         function: String = #function
     ) {
         Session.default.isRecording = recording

@@ -19,10 +19,10 @@ class Differ {
     }
     
     private func hasDiff(diffable: Diffable) -> Bool {
-        guard let recordedRequest = fileManager.retrieve(identifier: diffable.identifier) else {
+        guard let recordedRequests = fileManager.retrieve(identifier: diffable.identifier) else {
             return true
         }
 
-        return diffable.request != recordedRequest
+        return !recordedRequests.contains { $0 == diffable.request }
     }
 }

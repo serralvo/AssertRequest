@@ -10,14 +10,8 @@ class RequestCollector {
     }
     
     func append(urlRequest: URLRequest) {
-        
         do {
             let request = try Request(urlRequest: urlRequest)
-            
-            guard Session.default.isRecording == false else {
-                fileManager.store(request: request, identifier: identifier)
-                return
-            }
             
             requests.append(
                 .init(
@@ -30,9 +24,6 @@ class RequestCollector {
             print(error.localizedDescription)
             return
         }
-        
-
-        
     }
     
     func get() -> [Diffable] {
@@ -40,11 +31,10 @@ class RequestCollector {
     }
     
     func clear() {
+        if Session.default.isRecording {
+            fileManager.store(diffableList: requests)
+            return
+        }
         requests.removeAll()
     }
-}
-
-struct Diffable {
-    let identifier: RequestIdentifier
-    let request: Request
 }

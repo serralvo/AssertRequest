@@ -1,15 +1,17 @@
 struct RequestIdentifier {
     let testName: String
-    let file: StaticString
-    let fileExtension: StaticString = "json"
+    let file: String
+    let fileExtension: String = "json"
     
     init(
         testName: String,
-        file: StaticString
+        file: String
     ) {
         var test = testName
-        test.removeLast(2)
+        test.removeLast(2) // removes brackets ()
         self.testName = test
         self.file = file
     }
 }
+
+extension RequestIdentifier: Equatable {}
