@@ -12,6 +12,7 @@ class Session {
     var collector: RequestCollector?
     var differ: Differ?
     let dummyDataTask = URLSessionDataTask.new()
+    let dummyUploadTask = URLSessionUploadTask.new()
     
     private init() {}
     

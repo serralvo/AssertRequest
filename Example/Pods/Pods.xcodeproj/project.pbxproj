@@ -7,117 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08B2864DB525E163204EA2BB70407345 /* URLSessionDataTaskWithURLCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6C94E709F88EAC4C2564F7B0C76158 /* URLSessionDataTaskWithURLCompletion.swift */; };
+		0B366448FAD3CBE227E41B842E079F0A /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E2F0B4230E472A4733576807580B715 /* Session.swift */; };
+		0D65EAD267D39AB3DDD819C0D1389544 /* URLSessionDataTaskWithURLCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62024BC08FE99167345FAE952A18CA5 /* URLSessionDataTaskWithURLCompletion.swift */; };
 		0DC4EB0269FB20CD7234E389860A1731 /* Pods-AssertRequest_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 31970FA19D02728C912CB41058EF299E /* Pods-AssertRequest_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		23ADF4415AFF3A597A610D910CC9676C /* AssertRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3F3A5254449AB3040A461BB09177091 /* AssertRequest.swift */; };
+		10F27C96DEAF4ECED7299D10E8D19EB5 /* AssertRequest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A986919326E8EA735F1861980EFB286 /* AssertRequest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1383E40D1B673A75724958972D21BF97 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = D74361C05102A5DBB15912E50B6862A9 /* Request.swift */; };
+		16D715CEAC21DC70009A166B6823ACB9 /* AssertRequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B4220F82E806B52F7DF2B03DAE6936 /* AssertRequest-dummy.m */; };
 		3423938420962EDF8CE5C62D7C2FB581 /* Pods-AssertRequest_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E45914C992F50DB3C7782FBA53DBB253 /* Pods-AssertRequest_Tests-dummy.m */; };
+		363556E54E3AF45D63ACAC03A9188C58 /* URLSessionDataTaskWithRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F4D19A7827468B0299A9689C28982D9 /* URLSessionDataTaskWithRequest.swift */; };
 		369A2F311DB707DF862FFC5F5DEFFF17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		3FD8ECB7333E3339A3AA4A7405004C74 /* FileManagerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CFD9EDC2E7F26222FA0B2B3E475785 /* FileManagerHandler.swift */; };
+		3EE02F7AFBC68497CFCCBACA36F620C8 /* MethodSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D15C466EAEC385412310C7A553D0E7 /* MethodSelector.swift */; };
+		43BC33139D0EADCA2495F0388F6DA454 /* HTTPRequestParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7BB1D68D3B458609344CA87A5E1ECBE /* HTTPRequestParsingError.swift */; };
 		4BAB0C3AA1C75CB851273B223B95F284 /* Pods-AssertRequest_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEA8649F00CF66B202FF4445B559151E /* Pods-AssertRequest_Example-dummy.m */; };
-		521A1F6955F5A078EEC27502FF788BD1 /* cURL+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 675B09F8D638B22EE8B01413D34F40A3 /* cURL+Request.swift */; };
-		53FDE7E969697295E55AF383C2490EE3 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 403ED901908277EFE9BB21A8AB17EFBC /* Session.swift */; };
-		669EE557AF65AB34DF2DB0268E7A3B69 /* AssertRequest-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CDF47775691DEA64C1DB4EEB2A280A2A /* AssertRequest-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		67C48B0C18B4BDB1FA542CFEA5D6E2EA /* DataRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D3EA50101EB24240CE0A9159B9AA5D2 /* DataRequestInterceptor.swift */; };
-		70E92332D22F2E661D22A8D65A4DFFB2 /* URLSessionDataTaskWithRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AE1C84589BC99C233D8F9F8603029FA /* URLSessionDataTaskWithRequest.swift */; };
-		84E047E3DC03A08FC2C8CB3563AE9B0F /* AssertRequest-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C6088E608F1BA041D40B567F36F408EC /* AssertRequest-dummy.m */; };
-		891A933DC0D87F926534FE8C38C0F8B3 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 775608FA7BB1694A793BBEA29EED67CC /* HTTPMethod.swift */; };
-		9BD05497561553CC892ED1EFDA4B18D6 /* HTTPRequestParsingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B8DD05FF683F1272825B71DBB6E70FF /* HTTPRequestParsingError.swift */; };
-		9F14A6F7287E112346B4143AD953E6ED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		A827E0974CBCB2F7314105DB2B1DAF1C /* URLSessionDataTaskWithRequestCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = F75574FB9BC46A7D42342F7DA3284DD7 /* URLSessionDataTaskWithRequestCompletion.swift */; };
+		50F545455FE058E6BCEB7EE3B97D44F7 /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6427C46ED955A5371AF190FA7198DDD2 /* Swizzle.swift */; };
+		573632A3926425A94E5DA2B90D3E41BD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		6889B6FE6DBFD62BD2ED078820F7E602 /* URLSessionDataTaskResume.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372EE59982B74F7B550F328EF20CD66E /* URLSessionDataTaskResume.swift */; };
+		696C6B7C974C84639F8581FA6CAA6722 /* Differ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B405FD584D183197F9FE8FA0F6958 /* Differ.swift */; };
+		719B530221C47351C15E1C48DE98EC9F /* RequestIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD021E735F6BBDAFC445AF172E1778EC /* RequestIdentifier.swift */; };
+		721EEFEEAE93340680278A6E70D7C61E /* DataRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC01A059C6D55FAAEFC0DDBA153B151 /* DataRequestInterceptor.swift */; };
+		7B58F76AF774138ED89EC9D526A2F215 /* cURL+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60C973A4C3F6B5363962F3361CFA6FA /* cURL+Request.swift */; };
+		7C25856F1EC389A2A68169BC89B42B44 /* MethodsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBCA76FC746E54C688886786E51A8C /* MethodsFactory.swift */; };
+		8A7BC5219273FCD7EBD585E584C900F0 /* URLSessionUploadTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FDFB22B5F299D1661A919F5B7FE7B /* URLSessionUploadTask.swift */; };
+		93355D3BBFE61B9248D742FC59FC0004 /* AssertRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE715C1F6DC54C830AB047CC1A4035B1 /* AssertRequest.swift */; };
+		B0CA0B63771A0062CA1C22D0BD349E9E /* Diffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1302EB41CE09F9B5227D45C49C17FCA6 /* Diffable.swift */; };
 		B1C6D09FD7103D3029F7696F057E8AAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BBAFB276B978BC1D533A211E40B4C3E6 /* RequestCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 526EAB0E4B2BF68A5D9F534F952B344B /* RequestCollector.swift */; };
-		BCF77CD4F48516003A0E7EF1883EE49F /* Differ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D09C5716E1B606F71652C5506ECFD64 /* Differ.swift */; };
-		C45973B4EABC27243D78A51A6F96AA92 /* Swizzle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C273626F2DF92A07AE1D6363530122D8 /* Swizzle.swift */; };
-		C6A5DBFAD91CE6BEFFC917E09751DCCA /* MethodSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E75E72A0EA266C44688CAD27377326C /* MethodSelector.swift */; };
-		CAA1E8D5D71DB991687CD696E6BC4034 /* RequestIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55241A6B5772F6485845B8B72457973E /* RequestIdentifier.swift */; };
-		CABD88A1362787E5A7EBFC3ADD8339D2 /* URLSessionDataTaskResume.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3CF030DCB18C5ADECF7E9C1AF46F422 /* URLSessionDataTaskResume.swift */; };
-		D2F729F7D6BB32BC1B5473DFEB6DC02C /* URLSessionDataTaskWithURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14DA577887DF675B0561E1E25C85602 /* URLSessionDataTaskWithURL.swift */; };
-		DEE4772436032ED6412CBC9DD9CA82C5 /* MethodsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E52E41747B70451787A2F036067694 /* MethodsFactory.swift */; };
+		BFF08BE3426D6FCA26C03AAB9F2DC856 /* FileManagerHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 804C07BFB352728CC2D7A8966474E898 /* FileManagerHandler.swift */; };
+		C6823417CF657B66FD31AB66CB7C259E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38E706228C1456E5E5158AC4417DA6B /* HTTPMethod.swift */; };
+		CDE7FFC3F9B3BDB3EF0B40FC1DB24B4C /* URLSessionDataTaskWithURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381B92097757FDA47B041E491F5A786A /* URLSessionDataTaskWithURL.swift */; };
+		CEE0DD9DE0C3A74CAFC83EF94FC9CA48 /* URLSessionDataTaskWithRequestCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B0550B8A90601564A09C153ADB65E53 /* URLSessionDataTaskWithRequestCompletion.swift */; };
+		D1818A8FA500E3CD7AD921D48C69C1CA /* RequestCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAABC03C0A3D0FC51A8A6BB1C3106966 /* RequestCollector.swift */; };
+		E0855254485B807C422B9CCA14EF3BD2 /* FileError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E75798CF99C9D8CF2477B4A2E617D3 /* FileError.swift */; };
 		E196D4B054A2988F650DC14AE8527E3D /* Pods-AssertRequest_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76CD44ACC2F80098D4AAD31C90A3A470 /* Pods-AssertRequest_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E3B164AFB9DDB95DE17466B7F0F2AB0F /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109ED4AFB886E96F5ECCD62166032366 /* Request.swift */; };
-		EADB65C926003F2F00AC72F9 /* Diffable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADB65C826003F2F00AC72F9 /* Diffable.swift */; };
-		EADB65CE2600473400AC72F9 /* FileError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADB65CD2600473400AC72F9 /* FileError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		200C622D5660F9249996EEF9B8F1B822 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B4770C855AFB9615778889A2865A0BCE;
-			remoteInfo = AssertRequest;
-		};
-		637985AA72FF5C86A665477D60DB39C6 /* PBXContainerItemProxy */ = {
+		29F6A15A236CFF1F0C87BC40C40AEF1F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 6313D84CF8C8369C3E7E69C0C0C0D7B7;
 			remoteInfo = "Pods-AssertRequest_Example";
 		};
+		3D4FB261F252672372D90DED767CEBEB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B4770C855AFB9615778889A2865A0BCE;
+			remoteInfo = AssertRequest;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0B8DD05FF683F1272825B71DBB6E70FF /* HTTPRequestParsingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPRequestParsingError.swift; sourceTree = "<group>"; };
-		0E75E72A0EA266C44688CAD27377326C /* MethodSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MethodSelector.swift; sourceTree = "<group>"; };
+		03DBCA76FC746E54C688886786E51A8C /* MethodsFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MethodsFactory.swift; sourceTree = "<group>"; };
+		0A986919326E8EA735F1861980EFB286 /* AssertRequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AssertRequest-umbrella.h"; sourceTree = "<group>"; };
+		0D36AFE7C36A164206C7343348D6B0C6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		107B4A17EAD47B90360612999669DD66 /* Pods-AssertRequest_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AssertRequest_Example.modulemap"; sourceTree = "<group>"; };
-		109ED4AFB886E96F5ECCD62166032366 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
-		19768F19FE4B61187097717228689702 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1302EB41CE09F9B5227D45C49C17FCA6 /* Diffable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Diffable.swift; sourceTree = "<group>"; };
 		1F227091B10C5C9F7B0F2133936CE589 /* Pods-AssertRequest_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AssertRequest_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		24788310104952A34CCD428046179E22 /* AssertRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AssertRequest.debug.xcconfig; sourceTree = "<group>"; };
-		264393577C62DB7D6F371FFC54AE7C14 /* AssertRequest.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AssertRequest.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		29B079A2B8EAC952057B6C9ACC39673D /* Pods-AssertRequest_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AssertRequest_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		2C47FD61A56A7CE3C6D3847A099ACE6A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		30E75798CF99C9D8CF2477B4A2E617D3 /* FileError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FileError.swift; sourceTree = "<group>"; };
 		31970FA19D02728C912CB41058EF299E /* Pods-AssertRequest_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AssertRequest_Example-umbrella.h"; sourceTree = "<group>"; };
-		403ED901908277EFE9BB21A8AB17EFBC /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
-		526EAB0E4B2BF68A5D9F534F952B344B /* RequestCollector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCollector.swift; path = AssertRequest/Classes/RequestCollector.swift; sourceTree = "<group>"; };
-		55241A6B5772F6485845B8B72457973E /* RequestIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestIdentifier.swift; sourceTree = "<group>"; };
-		5F87AFADB91560B55BACBECB00C17B34 /* AssertRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AssertRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		675B09F8D638B22EE8B01413D34F40A3 /* cURL+Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "cURL+Request.swift"; sourceTree = "<group>"; };
-		69E52E41747B70451787A2F036067694 /* MethodsFactory.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MethodsFactory.swift; sourceTree = "<group>"; };
+		372EE59982B74F7B550F328EF20CD66E /* URLSessionDataTaskResume.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskResume.swift; sourceTree = "<group>"; };
+		381B92097757FDA47B041E491F5A786A /* URLSessionDataTaskWithURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskWithURL.swift; sourceTree = "<group>"; };
+		39D15C466EAEC385412310C7A553D0E7 /* MethodSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MethodSelector.swift; sourceTree = "<group>"; };
+		3A3B405FD584D183197F9FE8FA0F6958 /* Differ.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Differ.swift; path = AssertRequest/Classes/Differ.swift; sourceTree = "<group>"; };
+		3E2F0B4230E472A4733576807580B715 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		486FDFB22B5F299D1661A919F5B7FE7B /* URLSessionUploadTask.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionUploadTask.swift; sourceTree = "<group>"; };
+		4E43383942B73D466DBAEE2706B92D8E /* AssertRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AssertRequest.debug.xcconfig; sourceTree = "<group>"; };
+		5B0550B8A90601564A09C153ADB65E53 /* URLSessionDataTaskWithRequestCompletion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskWithRequestCompletion.swift; sourceTree = "<group>"; };
+		5F87AFADB91560B55BACBECB00C17B34 /* AssertRequest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AssertRequest.framework; path = AssertRequest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6427C46ED955A5371AF190FA7198DDD2 /* Swizzle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
+		6E7425ADF974452F2EC66219332542BB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		76CD44ACC2F80098D4AAD31C90A3A470 /* Pods-AssertRequest_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AssertRequest_Tests-umbrella.h"; sourceTree = "<group>"; };
 		76D38FFC55252A1CCEC2F4503952E649 /* Pods-AssertRequest_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AssertRequest_Example-frameworks.sh"; sourceTree = "<group>"; };
-		775608FA7BB1694A793BBEA29EED67CC /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
-		7D09C5716E1B606F71652C5506ECFD64 /* Differ.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Differ.swift; path = AssertRequest/Classes/Differ.swift; sourceTree = "<group>"; };
+		781273074039EA08C4273679EF92F46C /* AssertRequest.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = AssertRequest.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		796A9C1A380F2FBED3E0C15EA72D5177 /* AssertRequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AssertRequest-prefix.pch"; sourceTree = "<group>"; };
 		7FA06ED12B201D57B572DD37675C1DCB /* Pods-AssertRequest_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AssertRequest_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		80BF1D126969F4A48872647D3B316360 /* AssertRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AssertRequest.modulemap; sourceTree = "<group>"; };
+		804C07BFB352728CC2D7A8966474E898 /* FileManagerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileManagerHandler.swift; path = AssertRequest/Classes/FileManagerHandler.swift; sourceTree = "<group>"; };
 		82CC8186459437EB259B60A9B7D51734 /* Pods-AssertRequest_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AssertRequest_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		8D3EA50101EB24240CE0A9159B9AA5D2 /* DataRequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataRequestInterceptor.swift; path = AssertRequest/Classes/DataRequestInterceptor.swift; sourceTree = "<group>"; };
-		9AE1C84589BC99C233D8F9F8603029FA /* URLSessionDataTaskWithRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskWithRequest.swift; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A2CFD9EDC2E7F26222FA0B2B3E475785 /* FileManagerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileManagerHandler.swift; path = AssertRequest/Classes/FileManagerHandler.swift; sourceTree = "<group>"; };
-		A52A825F55946015CA770B5F047314D5 /* AssertRequest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AssertRequest-Info.plist"; sourceTree = "<group>"; };
+		8F4D19A7827468B0299A9689C28982D9 /* URLSessionDataTaskWithRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskWithRequest.swift; sourceTree = "<group>"; };
+		90B4220F82E806B52F7DF2B03DAE6936 /* AssertRequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AssertRequest-dummy.m"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9ECFFFB7C7ABAC63DAE3903E5E730EDB /* AssertRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AssertRequest.modulemap; sourceTree = "<group>"; };
+		A38E706228C1456E5E5158AC4417DA6B /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		A99C71D9AD2443206F1CE4D46634957F /* Pods-AssertRequest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AssertRequest_Example.release.xcconfig"; sourceTree = "<group>"; };
+		AAABC03C0A3D0FC51A8A6BB1C3106966 /* RequestCollector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCollector.swift; path = AssertRequest/Classes/RequestCollector.swift; sourceTree = "<group>"; };
+		ACC01A059C6D55FAAEFC0DDBA153B151 /* DataRequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataRequestInterceptor.swift; path = AssertRequest/Classes/DataRequestInterceptor.swift; sourceTree = "<group>"; };
 		ACD0CABA79F25352657182F8439FE382 /* Pods-AssertRequest_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AssertRequest_Tests.modulemap"; sourceTree = "<group>"; };
 		AECEDE3BFBE7CAE1665AF2A0A21A7D12 /* Pods-AssertRequest_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AssertRequest_Tests-Info.plist"; sourceTree = "<group>"; };
-		B14DA577887DF675B0561E1E25C85602 /* URLSessionDataTaskWithURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskWithURL.swift; sourceTree = "<group>"; };
-		B976F202F0D6ACF09731CEC0EF0835C7 /* AssertRequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AssertRequest-prefix.pch"; sourceTree = "<group>"; };
-		BF113BCDA7FFD60BEA83FD4213210F49 /* Pods_AssertRequest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssertRequest_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C273626F2DF92A07AE1D6363530122D8 /* Swizzle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Swizzle.swift; sourceTree = "<group>"; };
-		C3F3A5254449AB3040A461BB09177091 /* AssertRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssertRequest.swift; sourceTree = "<group>"; };
-		C6088E608F1BA041D40B567F36F408EC /* AssertRequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AssertRequest-dummy.m"; sourceTree = "<group>"; };
-		C68BFACE2A4C062853CD9897B8CFA8D8 /* Pods_AssertRequest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AssertRequest_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CD6C94E709F88EAC4C2564F7B0C76158 /* URLSessionDataTaskWithURLCompletion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskWithURLCompletion.swift; sourceTree = "<group>"; };
-		CDF47775691DEA64C1DB4EEB2A280A2A /* AssertRequest-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AssertRequest-umbrella.h"; sourceTree = "<group>"; };
-		D3CF030DCB18C5ADECF7E9C1AF46F422 /* URLSessionDataTaskResume.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskResume.swift; sourceTree = "<group>"; };
+		BD021E735F6BBDAFC445AF172E1778EC /* RequestIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestIdentifier.swift; sourceTree = "<group>"; };
+		BF113BCDA7FFD60BEA83FD4213210F49 /* Pods_AssertRequest_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AssertRequest_Tests.framework; path = "Pods-AssertRequest_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C62024BC08FE99167345FAE952A18CA5 /* URLSessionDataTaskWithURLCompletion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskWithURLCompletion.swift; sourceTree = "<group>"; };
+		C68BFACE2A4C062853CD9897B8CFA8D8 /* Pods_AssertRequest_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AssertRequest_Example.framework; path = "Pods-AssertRequest_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CEED4F27BD0B9BDB289F6A73818893D2 /* AssertRequest-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AssertRequest-Info.plist"; sourceTree = "<group>"; };
+		D74361C05102A5DBB15912E50B6862A9 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		D893205D89C9F32CA4A97188304E3EE8 /* Pods-AssertRequest_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AssertRequest_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		DCD6BFCD55ADF8FB0AD9EF4A1E24371C /* Pods-AssertRequest_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AssertRequest_Example-Info.plist"; sourceTree = "<group>"; };
+		DE715C1F6DC54C830AB047CC1A4035B1 /* AssertRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssertRequest.swift; sourceTree = "<group>"; };
 		E45914C992F50DB3C7782FBA53DBB253 /* Pods-AssertRequest_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AssertRequest_Tests-dummy.m"; sourceTree = "<group>"; };
-		EADB65C826003F2F00AC72F9 /* Diffable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diffable.swift; sourceTree = "<group>"; };
-		EADB65CD2600473400AC72F9 /* FileError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileError.swift; sourceTree = "<group>"; };
+		E60C973A4C3F6B5363962F3361CFA6FA /* cURL+Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "cURL+Request.swift"; sourceTree = "<group>"; };
 		EEA8649F00CF66B202FF4445B559151E /* Pods-AssertRequest_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AssertRequest_Example-dummy.m"; sourceTree = "<group>"; };
-		EF97FE2222DFC6A7FACD889C768606A4 /* AssertRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AssertRequest.release.xcconfig; sourceTree = "<group>"; };
 		F746A5C61873BE118C9636EBFA760F43 /* Pods-AssertRequest_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AssertRequest_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		F75574FB9BC46A7D42342F7DA3284DD7 /* URLSessionDataTaskWithRequestCompletion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskWithRequestCompletion.swift; sourceTree = "<group>"; };
+		F7BB1D68D3B458609344CA87A5E1ECBE /* HTTPRequestParsingError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPRequestParsingError.swift; sourceTree = "<group>"; };
 		F7EA6A000D811B0C8B7A7ABA034D6FF3 /* Pods-AssertRequest_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AssertRequest_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		F9A41771F3EA4151D833DC6A628B720F /* AssertRequest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AssertRequest.release.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		AA960D094E88D360DA854C0BDFD46B18 /* Frameworks */ = {
+		6F6E2B49742A446ED4BFBBF67483D219 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9F14A6F7287E112346B4143AD953E6ED /* Foundation.framework in Frameworks */,
+				573632A3926425A94E5DA2B90D3E41BD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,26 +142,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0114298A305C0F2F1B658FE49C1FE6C1 /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				264393577C62DB7D6F371FFC54AE7C14 /* AssertRequest.podspec */,
-				2C47FD61A56A7CE3C6D3847A099ACE6A /* LICENSE */,
-				19768F19FE4B61187097717228689702 /* README.md */,
-			);
-			name = Pod;
-			sourceTree = "<group>";
-		};
-		0530BCD4EEA83D3E962720A97AFC64E9 /* Error */ = {
-			isa = PBXGroup;
-			children = (
-				0B8DD05FF683F1272825B71DBB6E70FF /* HTTPRequestParsingError.swift */,
-				EADB65CD2600473400AC72F9 /* FileError.swift */,
-			);
-			name = Error;
-			path = AssertRequest/Classes/Error;
-			sourceTree = "<group>";
-		};
 		1CD89EB70C932069B80F779D73F5B54D /* Pods-AssertRequest_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -177,6 +159,18 @@
 			path = "Target Support Files/Pods-AssertRequest_Example";
 			sourceTree = "<group>";
 		};
+		29CAF3858290CBA59C35ACACE0A38018 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1302EB41CE09F9B5227D45C49C17FCA6 /* Diffable.swift */,
+				A38E706228C1456E5E5158AC4417DA6B /* HTTPMethod.swift */,
+				D74361C05102A5DBB15912E50B6862A9 /* Request.swift */,
+				BD021E735F6BBDAFC445AF172E1778EC /* RequestIdentifier.swift */,
+			);
+			name = Model;
+			path = AssertRequest/Classes/Model;
+			sourceTree = "<group>";
+		};
 		38266C1B7C54FCA46E0F60CF6C0AB089 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -185,25 +179,6 @@
 				BF113BCDA7FFD60BEA83FD4213210F49 /* Pods_AssertRequest_Tests.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		456D14CAC3B28D6E511FC895F959450D /* AssertRequest */ = {
-			isa = PBXGroup;
-			children = (
-				8D3EA50101EB24240CE0A9159B9AA5D2 /* DataRequestInterceptor.swift */,
-				7D09C5716E1B606F71652C5506ECFD64 /* Differ.swift */,
-				A2CFD9EDC2E7F26222FA0B2B3E475785 /* FileManagerHandler.swift */,
-				526EAB0E4B2BF68A5D9F534F952B344B /* RequestCollector.swift */,
-				0530BCD4EEA83D3E962720A97AFC64E9 /* Error */,
-				76A69734FBA6247FE827031BF3F5C373 /* Model */,
-				0114298A305C0F2F1B658FE49C1FE6C1 /* Pod */,
-				D077B178956109677DF2065B85993E0E /* Session */,
-				91184E61AE1E212D6D7C0E438D68371D /* Support Files */,
-				6A6D5FE85011DFBA3C2189801360E0CF /* Swizzling */,
-				50A01FF8DFFE7EA2326954611BE7CC21 /* Utility */,
-			);
-			name = AssertRequest;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		4B73001429C97C74569082A467C64C9E /* Pods-AssertRequest_Tests */ = {
@@ -222,15 +197,6 @@
 			path = "Target Support Files/Pods-AssertRequest_Tests";
 			sourceTree = "<group>";
 		};
-		50A01FF8DFFE7EA2326954611BE7CC21 /* Utility */ = {
-			isa = PBXGroup;
-			children = (
-				675B09F8D638B22EE8B01413D34F40A3 /* cURL+Request.swift */,
-			);
-			name = Utility;
-			path = AssertRequest/Classes/Utility;
-			sourceTree = "<group>";
-		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -239,32 +205,42 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		6A6D5FE85011DFBA3C2189801360E0CF /* Swizzling */ = {
+		60402D3A9361E5FCE420B3F7110AC85D /* AssertRequest */ = {
 			isa = PBXGroup;
 			children = (
-				0E75E72A0EA266C44688CAD27377326C /* MethodSelector.swift */,
-				69E52E41747B70451787A2F036067694 /* MethodsFactory.swift */,
-				C273626F2DF92A07AE1D6363530122D8 /* Swizzle.swift */,
-				D3CF030DCB18C5ADECF7E9C1AF46F422 /* URLSessionDataTaskResume.swift */,
-				9AE1C84589BC99C233D8F9F8603029FA /* URLSessionDataTaskWithRequest.swift */,
-				F75574FB9BC46A7D42342F7DA3284DD7 /* URLSessionDataTaskWithRequestCompletion.swift */,
-				B14DA577887DF675B0561E1E25C85602 /* URLSessionDataTaskWithURL.swift */,
-				CD6C94E709F88EAC4C2564F7B0C76158 /* URLSessionDataTaskWithURLCompletion.swift */,
+				ACC01A059C6D55FAAEFC0DDBA153B151 /* DataRequestInterceptor.swift */,
+				3A3B405FD584D183197F9FE8FA0F6958 /* Differ.swift */,
+				804C07BFB352728CC2D7A8966474E898 /* FileManagerHandler.swift */,
+				AAABC03C0A3D0FC51A8A6BB1C3106966 /* RequestCollector.swift */,
+				7B70CBCE64AA5BC850EF307150B6BF7B /* Error */,
+				29CAF3858290CBA59C35ACACE0A38018 /* Model */,
+				A8496E3BE2B81AE82B90DED743DFB4F4 /* Pod */,
+				D77A4AFDF6DD2C3A99372F9125D530DC /* Session */,
+				9C9ED5B92BA61B82DF9DA71CE3C05FC2 /* Support Files */,
+				A3357B13BB1D02DF96F34A6381A99DFA /* Swizzling */,
+				750C188E68EDA1A62E2AB27FB7713B3A /* Utility */,
 			);
-			name = Swizzling;
-			path = AssertRequest/Classes/Swizzling;
+			name = AssertRequest;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		76A69734FBA6247FE827031BF3F5C373 /* Model */ = {
+		750C188E68EDA1A62E2AB27FB7713B3A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				775608FA7BB1694A793BBEA29EED67CC /* HTTPMethod.swift */,
-				109ED4AFB886E96F5ECCD62166032366 /* Request.swift */,
-				55241A6B5772F6485845B8B72457973E /* RequestIdentifier.swift */,
-				EADB65C826003F2F00AC72F9 /* Diffable.swift */,
+				E60C973A4C3F6B5363962F3361CFA6FA /* cURL+Request.swift */,
 			);
-			name = Model;
-			path = AssertRequest/Classes/Model;
+			name = Utility;
+			path = AssertRequest/Classes/Utility;
+			sourceTree = "<group>";
+		};
+		7B70CBCE64AA5BC850EF307150B6BF7B /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				30E75798CF99C9D8CF2477B4A2E617D3 /* FileError.swift */,
+				F7BB1D68D3B458609344CA87A5E1ECBE /* HTTPRequestParsingError.swift */,
+			);
+			name = Error;
+			path = AssertRequest/Classes/Error;
 			sourceTree = "<group>";
 		};
 		7CE472095A66C87E67A09C70C6FBA031 /* Targets Support Files */ = {
@@ -279,24 +255,51 @@
 		8F1118FC396E1E300E9D74C757EC357A /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				456D14CAC3B28D6E511FC895F959450D /* AssertRequest */,
+				60402D3A9361E5FCE420B3F7110AC85D /* AssertRequest */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		91184E61AE1E212D6D7C0E438D68371D /* Support Files */ = {
+		9C9ED5B92BA61B82DF9DA71CE3C05FC2 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				80BF1D126969F4A48872647D3B316360 /* AssertRequest.modulemap */,
-				C6088E608F1BA041D40B567F36F408EC /* AssertRequest-dummy.m */,
-				A52A825F55946015CA770B5F047314D5 /* AssertRequest-Info.plist */,
-				B976F202F0D6ACF09731CEC0EF0835C7 /* AssertRequest-prefix.pch */,
-				CDF47775691DEA64C1DB4EEB2A280A2A /* AssertRequest-umbrella.h */,
-				24788310104952A34CCD428046179E22 /* AssertRequest.debug.xcconfig */,
-				EF97FE2222DFC6A7FACD889C768606A4 /* AssertRequest.release.xcconfig */,
+				9ECFFFB7C7ABAC63DAE3903E5E730EDB /* AssertRequest.modulemap */,
+				90B4220F82E806B52F7DF2B03DAE6936 /* AssertRequest-dummy.m */,
+				CEED4F27BD0B9BDB289F6A73818893D2 /* AssertRequest-Info.plist */,
+				796A9C1A380F2FBED3E0C15EA72D5177 /* AssertRequest-prefix.pch */,
+				0A986919326E8EA735F1861980EFB286 /* AssertRequest-umbrella.h */,
+				4E43383942B73D466DBAEE2706B92D8E /* AssertRequest.debug.xcconfig */,
+				F9A41771F3EA4151D833DC6A628B720F /* AssertRequest.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/AssertRequest";
+			sourceTree = "<group>";
+		};
+		A3357B13BB1D02DF96F34A6381A99DFA /* Swizzling */ = {
+			isa = PBXGroup;
+			children = (
+				39D15C466EAEC385412310C7A553D0E7 /* MethodSelector.swift */,
+				03DBCA76FC746E54C688886786E51A8C /* MethodsFactory.swift */,
+				6427C46ED955A5371AF190FA7198DDD2 /* Swizzle.swift */,
+				372EE59982B74F7B550F328EF20CD66E /* URLSessionDataTaskResume.swift */,
+				8F4D19A7827468B0299A9689C28982D9 /* URLSessionDataTaskWithRequest.swift */,
+				5B0550B8A90601564A09C153ADB65E53 /* URLSessionDataTaskWithRequestCompletion.swift */,
+				381B92097757FDA47B041E491F5A786A /* URLSessionDataTaskWithURL.swift */,
+				C62024BC08FE99167345FAE952A18CA5 /* URLSessionDataTaskWithURLCompletion.swift */,
+				486FDFB22B5F299D1661A919F5B7FE7B /* URLSessionUploadTask.swift */,
+			);
+			name = Swizzling;
+			path = AssertRequest/Classes/Swizzling;
+			sourceTree = "<group>";
+		};
+		A8496E3BE2B81AE82B90DED743DFB4F4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				781273074039EA08C4273679EF92F46C /* AssertRequest.podspec */,
+				6E7425ADF974452F2EC66219332542BB /* LICENSE */,
+				0D36AFE7C36A164206C7343348D6B0C6 /* README.md */,
+			);
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -310,22 +313,22 @@
 			);
 			sourceTree = "<group>";
 		};
-		D077B178956109677DF2065B85993E0E /* Session */ = {
-			isa = PBXGroup;
-			children = (
-				C3F3A5254449AB3040A461BB09177091 /* AssertRequest.swift */,
-				403ED901908277EFE9BB21A8AB17EFBC /* Session.swift */,
-			);
-			name = Session;
-			path = AssertRequest/Classes/Session;
-			sourceTree = "<group>";
-		};
 		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				578452D2E740E91742655AC8F1636D1F /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D77A4AFDF6DD2C3A99372F9125D530DC /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				DE715C1F6DC54C830AB047CC1A4035B1 /* AssertRequest.swift */,
+				3E2F0B4230E472A4733576807580B715 /* Session.swift */,
+			);
+			name = Session;
+			path = AssertRequest/Classes/Session;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -347,11 +350,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5EFBC6FA725FBBF68BEA1A0E4BAC8786 /* Headers */ = {
+		9459DDD67F5465846E2708D53225E502 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				669EE557AF65AB34DF2DB0268E7A3B69 /* AssertRequest-umbrella.h in Headers */,
+				10F27C96DEAF4ECED7299D10E8D19EB5 /* AssertRequest-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,7 +373,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				B072F819906E397C099BFF65B34B85E3 /* PBXTargetDependency */,
+				5A066119E443E02BF9975EA4A59A58B5 /* PBXTargetDependency */,
 			);
 			name = "Pods-AssertRequest_Example";
 			productName = "Pods-AssertRequest_Example";
@@ -379,12 +382,12 @@
 		};
 		B4770C855AFB9615778889A2865A0BCE /* AssertRequest */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 141698DA7FDADD3871FC649F991F8821 /* Build configuration list for PBXNativeTarget "AssertRequest" */;
+			buildConfigurationList = CB30D8A313973768656C19386259F4CD /* Build configuration list for PBXNativeTarget "AssertRequest" */;
 			buildPhases = (
-				5EFBC6FA725FBBF68BEA1A0E4BAC8786 /* Headers */,
-				3660B856AC9CAEF10C4A818C999B3117 /* Sources */,
-				AA960D094E88D360DA854C0BDFD46B18 /* Frameworks */,
-				C65CFFF670513FF8BE082CFDB7316F7B /* Resources */,
+				9459DDD67F5465846E2708D53225E502 /* Headers */,
+				FF09CC0E4D9E6445D634BE1FAC66A0AD /* Sources */,
+				6F6E2B49742A446ED4BFBBF67483D219 /* Frameworks */,
+				F047FA06AB06D767D9CC7FE9B6E4185F /* Resources */,
 			);
 			buildRules = (
 			);
@@ -407,7 +410,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				5236D2AE5AE638EF53080881599CFDBD /* PBXTargetDependency */,
+				480BB32B4C0930F896C5BEEDD8076BB5 /* PBXTargetDependency */,
 			);
 			name = "Pods-AssertRequest_Tests";
 			productName = "Pods-AssertRequest_Tests";
@@ -458,7 +461,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C65CFFF670513FF8BE082CFDB7316F7B /* Resources */ = {
+		F047FA06AB06D767D9CC7FE9B6E4185F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -468,35 +471,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3660B856AC9CAEF10C4A818C999B3117 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84E047E3DC03A08FC2C8CB3563AE9B0F /* AssertRequest-dummy.m in Sources */,
-				23ADF4415AFF3A597A610D910CC9676C /* AssertRequest.swift in Sources */,
-				521A1F6955F5A078EEC27502FF788BD1 /* cURL+Request.swift in Sources */,
-				EADB65C926003F2F00AC72F9 /* Diffable.swift in Sources */,
-				67C48B0C18B4BDB1FA542CFEA5D6E2EA /* DataRequestInterceptor.swift in Sources */,
-				BCF77CD4F48516003A0E7EF1883EE49F /* Differ.swift in Sources */,
-				3FD8ECB7333E3339A3AA4A7405004C74 /* FileManagerHandler.swift in Sources */,
-				891A933DC0D87F926534FE8C38C0F8B3 /* HTTPMethod.swift in Sources */,
-				9BD05497561553CC892ED1EFDA4B18D6 /* HTTPRequestParsingError.swift in Sources */,
-				C6A5DBFAD91CE6BEFFC917E09751DCCA /* MethodSelector.swift in Sources */,
-				DEE4772436032ED6412CBC9DD9CA82C5 /* MethodsFactory.swift in Sources */,
-				E3B164AFB9DDB95DE17466B7F0F2AB0F /* Request.swift in Sources */,
-				BBAFB276B978BC1D533A211E40B4C3E6 /* RequestCollector.swift in Sources */,
-				CAA1E8D5D71DB991687CD696E6BC4034 /* RequestIdentifier.swift in Sources */,
-				53FDE7E969697295E55AF383C2490EE3 /* Session.swift in Sources */,
-				C45973B4EABC27243D78A51A6F96AA92 /* Swizzle.swift in Sources */,
-				EADB65CE2600473400AC72F9 /* FileError.swift in Sources */,
-				CABD88A1362787E5A7EBFC3ADD8339D2 /* URLSessionDataTaskResume.swift in Sources */,
-				70E92332D22F2E661D22A8D65A4DFFB2 /* URLSessionDataTaskWithRequest.swift in Sources */,
-				A827E0974CBCB2F7314105DB2B1DAF1C /* URLSessionDataTaskWithRequestCompletion.swift in Sources */,
-				D2F729F7D6BB32BC1B5473DFEB6DC02C /* URLSessionDataTaskWithURL.swift in Sources */,
-				08B2864DB525E163204EA2BB70407345 /* URLSessionDataTaskWithURLCompletion.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5326DF3DF7640DEAD189B96572C20C85 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -513,20 +487,50 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FF09CC0E4D9E6445D634BE1FAC66A0AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16D715CEAC21DC70009A166B6823ACB9 /* AssertRequest-dummy.m in Sources */,
+				93355D3BBFE61B9248D742FC59FC0004 /* AssertRequest.swift in Sources */,
+				7B58F76AF774138ED89EC9D526A2F215 /* cURL+Request.swift in Sources */,
+				721EEFEEAE93340680278A6E70D7C61E /* DataRequestInterceptor.swift in Sources */,
+				B0CA0B63771A0062CA1C22D0BD349E9E /* Diffable.swift in Sources */,
+				696C6B7C974C84639F8581FA6CAA6722 /* Differ.swift in Sources */,
+				E0855254485B807C422B9CCA14EF3BD2 /* FileError.swift in Sources */,
+				BFF08BE3426D6FCA26C03AAB9F2DC856 /* FileManagerHandler.swift in Sources */,
+				C6823417CF657B66FD31AB66CB7C259E /* HTTPMethod.swift in Sources */,
+				43BC33139D0EADCA2495F0388F6DA454 /* HTTPRequestParsingError.swift in Sources */,
+				3EE02F7AFBC68497CFCCBACA36F620C8 /* MethodSelector.swift in Sources */,
+				7C25856F1EC389A2A68169BC89B42B44 /* MethodsFactory.swift in Sources */,
+				1383E40D1B673A75724958972D21BF97 /* Request.swift in Sources */,
+				D1818A8FA500E3CD7AD921D48C69C1CA /* RequestCollector.swift in Sources */,
+				719B530221C47351C15E1C48DE98EC9F /* RequestIdentifier.swift in Sources */,
+				0B366448FAD3CBE227E41B842E079F0A /* Session.swift in Sources */,
+				50F545455FE058E6BCEB7EE3B97D44F7 /* Swizzle.swift in Sources */,
+				6889B6FE6DBFD62BD2ED078820F7E602 /* URLSessionDataTaskResume.swift in Sources */,
+				363556E54E3AF45D63ACAC03A9188C58 /* URLSessionDataTaskWithRequest.swift in Sources */,
+				CEE0DD9DE0C3A74CAFC83EF94FC9CA48 /* URLSessionDataTaskWithRequestCompletion.swift in Sources */,
+				CDE7FFC3F9B3BDB3EF0B40FC1DB24B4C /* URLSessionDataTaskWithURL.swift in Sources */,
+				0D65EAD267D39AB3DDD819C0D1389544 /* URLSessionDataTaskWithURLCompletion.swift in Sources */,
+				8A7BC5219273FCD7EBD585E584C900F0 /* URLSessionUploadTask.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5236D2AE5AE638EF53080881599CFDBD /* PBXTargetDependency */ = {
+		480BB32B4C0930F896C5BEEDD8076BB5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-AssertRequest_Example";
 			target = 6313D84CF8C8369C3E7E69C0C0C0D7B7 /* Pods-AssertRequest_Example */;
-			targetProxy = 637985AA72FF5C86A665477D60DB39C6 /* PBXContainerItemProxy */;
+			targetProxy = 29F6A15A236CFF1F0C87BC40C40AEF1F /* PBXContainerItemProxy */;
 		};
-		B072F819906E397C099BFF65B34B85E3 /* PBXTargetDependency */ = {
+		5A066119E443E02BF9975EA4A59A58B5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = AssertRequest;
 			target = B4770C855AFB9615778889A2865A0BCE /* AssertRequest */;
-			targetProxy = 200C622D5660F9249996EEF9B8F1B822 /* PBXContainerItemProxy */;
+			targetProxy = 3D4FB261F252672372D90DED767CEBEB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -565,9 +569,39 @@
 			};
 			name = Release;
 		};
-		442C30F6AFCBD501D7FF2F1E26A21808 /* Release */ = {
+		052C0A9F7998D9F43802C8FF4AA36D87 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EF97FE2222DFC6A7FACD889C768606A4 /* AssertRequest.release.xcconfig */;
+			baseConfigurationReference = 4E43383942B73D466DBAEE2706B92D8E /* AssertRequest.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AssertRequest/AssertRequest-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AssertRequest/AssertRequest-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AssertRequest/AssertRequest.modulemap";
+				PRODUCT_MODULE_NAME = AssertRequest;
+				PRODUCT_NAME = AssertRequest;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		3D3387212C2B5DE6AD100B256476ADCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F9A41771F3EA4151D833DC6A628B720F /* AssertRequest.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -684,7 +718,8 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
@@ -790,36 +825,6 @@
 			};
 			name = Debug;
 		};
-		D7DAF5B76A31837E54556464CD27AB09 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24788310104952A34CCD428046179E22 /* AssertRequest.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/AssertRequest/AssertRequest-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/AssertRequest/AssertRequest-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/AssertRequest/AssertRequest.modulemap";
-				PRODUCT_MODULE_NAME = AssertRequest;
-				PRODUCT_NAME = AssertRequest;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 		ECFCA1630B76E46AB99AF6448981A102 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 29B079A2B8EAC952057B6C9ACC39673D /* Pods-AssertRequest_Example.debug.xcconfig */;
@@ -856,15 +861,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		141698DA7FDADD3871FC649F991F8821 /* Build configuration list for PBXNativeTarget "AssertRequest" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D7DAF5B76A31837E54556464CD27AB09 /* Debug */,
-				442C30F6AFCBD501D7FF2F1E26A21808 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -888,6 +884,15 @@
 			buildConfigurations = (
 				48FD5A0C33C59D53EB2FDCCE2A89AAEA /* Debug */,
 				C11C0282DC5FA6D72E3BC9FE6C15678D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB30D8A313973768656C19386259F4CD /* Build configuration list for PBXNativeTarget "AssertRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				052C0A9F7998D9F43802C8FF4AA36D87 /* Debug */,
+				3D3387212C2B5DE6AD100B256476ADCE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -24,4 +24,12 @@ class Tests: XCTestCase {
         }
         wait(for: [expectation], timeout: 0.5)
     }
+    
+    func test_viewController_createPost_expectMatchingRequest() {
+        AssertRequest.startObserving(recording: false)
+        
+        ViewController().createPost()
+        
+        AssertRequest.assert()
+    }
 }

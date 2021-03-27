@@ -37,15 +37,22 @@
                                             <action selector="didTouchMakeChainedRequests" destination="vXZ-lx-hvc" eventType="touchUpInside" id="WJV-Jo-iIy"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkl-3x-vbc">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gd9-HI-vlk">
                                         <rect key="frame" x="0.0" y="60" width="375" height="30"/>
-                                        <state key="normal" title="clear"/>
+                                        <state key="normal" title="Make post"/>
+                                        <connections>
+                                            <action selector="createPost" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Mpd-RY-agA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bkl-3x-vbc">
+                                        <rect key="frame" x="0.0" y="90" width="375" height="30"/>
+                                        <state key="normal" title="Clear"/>
                                         <connections>
                                             <action selector="didTouchClear" destination="vXZ-lx-hvc" eventType="touchUpInside" id="TN4-mY-pgN"/>
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Request result will appear here" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgR-y9-PSN">
-                                        <rect key="frame" x="0.0" y="90" width="375" height="577"/>
+                                        <rect key="frame" x="0.0" y="120" width="375" height="547"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <accessibility key="accessibilityConfiguration">
                                             <accessibilityTraits key="traits" notEnabled="YES"/>
