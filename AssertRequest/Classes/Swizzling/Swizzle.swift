@@ -17,6 +17,10 @@ class Swizzle {
         URLSessionDataTaskWithRequestCompletion(),
         URLSessionDataTaskResume(),
         URLSessionUploadTaskWithCompletion(),
+        URLSessionUploadTaskFromFile(),
+        URLSessionUploadTaskFromBodyData(),
+        URLSessionUploadTaskWithStreamedRequest(),
+        URLSessionUploadTaskWithCompletionFromFile(),
     ]
     
     func start() {
