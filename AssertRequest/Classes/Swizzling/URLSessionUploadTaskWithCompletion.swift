@@ -14,7 +14,7 @@ struct URLSessionUploadTaskWithCompletion: MethodSelector {
 
 extension URLSession {
     @objc open func _uploadTaskWithCompletion(with: URLRequest, from: Data?, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> URLSessionUploadTask {
-        Session.default.interceptor.intercept(urlRequest: with)
+        Session.default.interceptor.intercept(urlRequest: with, bodyData: from)
         completionHandler(nil, nil, nil)
         return Session.default.dummyUploadTask
     }

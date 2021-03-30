@@ -1,9 +1,10 @@
 [
   {
-    "url" : "https:\/\/jsonplaceholder.typicode.com\/posts",
+    "body" : "{\"body\":\"bar\",\"usedId\":99,\"title\":\"foo\"}",
     "method" : "POST",
     "headers" : {
       "Content-Type" : "application\/json"
-    }
+    },
+    "url" : "https:\/\/jsonplaceholder.typicode.com\/posts"
   }
 ]

@@ -14,7 +14,7 @@ struct URLSessionUploadTaskFromBodyData: MethodSelector {
 
 extension URLSession {
     @objc open func _uploadTaskFromBodyData(with: URLRequest, from: Data) -> URLSessionUploadTask {
-        Session.default.interceptor.intercept(urlRequest: with)
+        Session.default.interceptor.intercept(urlRequest: with, bodyData: from)
         return Session.default.dummyUploadTask
     }
 }

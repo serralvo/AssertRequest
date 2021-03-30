@@ -29,5 +29,10 @@ struct Request: Codable {
 }
 
 extension Request: Equatable {
-    
+    static func == (lhs: Request, rhs: Request) -> Bool {
+        lhs.url == rhs.url
+            && lhs.headers == rhs.headers
+            && lhs.method == rhs.method
+            && lhs.body?.sorted() == rhs.body?.sorted()
+    }
 }
