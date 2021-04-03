@@ -9,8 +9,8 @@ class Session {
     
     let interceptor = DataRequestInterceptor()
     let swizzle = Swizzle()
-    var collector: RequestCollector?
-    var differ: Differ?
+    var collector = RequestCollector()
+    lazy var differ = Differ(collector: collector)
     let dummyDataTask = URLSessionDataTask.new()
     let dummyUploadTask = URLSessionUploadTask.new()
     
@@ -19,14 +19,13 @@ class Session {
     // MARK: - Observing
     
     func startObserving(identifier: RequestIdentifier) {
-        let collector = RequestCollector(identifier: identifier)
+        collector = RequestCollector()
         differ = Differ(collector: collector)
-        self.collector = collector
         swizzle.start()
     }
     
     func stopObserving() throws {
         swizzle.stop()
-        try collector?.clear()
+        try collector.clear()
     }
 }

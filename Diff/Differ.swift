@@ -11,7 +11,7 @@ class Differ {
     var fileManager = FileManagerHandler()
     
     func hasAnyDiff() throws -> Bool {
-        for diffable in collector.get() {
+        for diffable in collector.requests {
             if try hasDiff(diffable: diffable) { return true }
         }
         

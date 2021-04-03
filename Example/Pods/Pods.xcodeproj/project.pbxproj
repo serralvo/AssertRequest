@@ -25,7 +25,6 @@
 		696C6B7C974C84639F8581FA6CAA6722 /* Differ.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B405FD584D183197F9FE8FA0F6958 /* Differ.swift */; };
 		719B530221C47351C15E1C48DE98EC9F /* RequestIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD021E735F6BBDAFC445AF172E1778EC /* RequestIdentifier.swift */; };
 		721EEFEEAE93340680278A6E70D7C61E /* DataRequestInterceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC01A059C6D55FAAEFC0DDBA153B151 /* DataRequestInterceptor.swift */; };
-		7B58F76AF774138ED89EC9D526A2F215 /* cURL+Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = E60C973A4C3F6B5363962F3361CFA6FA /* cURL+Request.swift */; };
 		7C25856F1EC389A2A68169BC89B42B44 /* MethodsFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBCA76FC746E54C688886786E51A8C /* MethodsFactory.swift */; };
 		8A7BC5219273FCD7EBD585E584C900F0 /* URLSessionUploadTaskWithCompletion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486FDFB22B5F299D1661A919F5B7FE7B /* URLSessionUploadTaskWithCompletion.swift */; };
 		93355D3BBFE61B9248D742FC59FC0004 /* AssertRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE715C1F6DC54C830AB047CC1A4035B1 /* AssertRequest.swift */; };
@@ -38,6 +37,7 @@
 		D1818A8FA500E3CD7AD921D48C69C1CA /* RequestCollector.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAABC03C0A3D0FC51A8A6BB1C3106966 /* RequestCollector.swift */; };
 		E0855254485B807C422B9CCA14EF3BD2 /* FileError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E75798CF99C9D8CF2477B4A2E617D3 /* FileError.swift */; };
 		E196D4B054A2988F650DC14AE8527E3D /* Pods-AssertRequest_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 76CD44ACC2F80098D4AAD31C90A3A470 /* Pods-AssertRequest_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EA2A26702618EC7E00F00377 /* InternalError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA2A266F2618EC7E00F00377 /* InternalError.swift */; };
 		EAA961AE26129B5100301AD1 /* URLSessionUploadTaskFromFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA961AD26129B5100301AD1 /* URLSessionUploadTaskFromFile.swift */; };
 		EAA961B626129C4700301AD1 /* URLSessionUploadTaskFromBodyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA961B526129C4700301AD1 /* URLSessionUploadTaskFromBodyData.swift */; };
 		EAA961BB26129D1100301AD1 /* URLSessionUploadTaskWithStreamedRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAA961BA26129D1100301AD1 /* URLSessionUploadTaskWithStreamedRequest.swift */; };
@@ -74,7 +74,7 @@
 		372EE59982B74F7B550F328EF20CD66E /* URLSessionDataTaskResume.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskResume.swift; sourceTree = "<group>"; };
 		381B92097757FDA47B041E491F5A786A /* URLSessionDataTaskWithURL.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskWithURL.swift; sourceTree = "<group>"; };
 		39D15C466EAEC385412310C7A553D0E7 /* MethodSelector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MethodSelector.swift; sourceTree = "<group>"; };
-		3A3B405FD584D183197F9FE8FA0F6958 /* Differ.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Differ.swift; path = AssertRequest/Classes/Differ.swift; sourceTree = "<group>"; };
+		3A3B405FD584D183197F9FE8FA0F6958 /* Differ.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Differ.swift; sourceTree = "<group>"; };
 		3E2F0B4230E472A4733576807580B715 /* Session.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		486FDFB22B5F299D1661A919F5B7FE7B /* URLSessionUploadTaskWithCompletion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionUploadTaskWithCompletion.swift; sourceTree = "<group>"; };
 		4E43383942B73D466DBAEE2706B92D8E /* AssertRequest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AssertRequest.debug.xcconfig; sourceTree = "<group>"; };
@@ -88,7 +88,7 @@
 		781273074039EA08C4273679EF92F46C /* AssertRequest.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = AssertRequest.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		796A9C1A380F2FBED3E0C15EA72D5177 /* AssertRequest-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AssertRequest-prefix.pch"; sourceTree = "<group>"; };
 		7FA06ED12B201D57B572DD37675C1DCB /* Pods-AssertRequest_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AssertRequest_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		804C07BFB352728CC2D7A8966474E898 /* FileManagerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FileManagerHandler.swift; path = AssertRequest/Classes/FileManagerHandler.swift; sourceTree = "<group>"; };
+		804C07BFB352728CC2D7A8966474E898 /* FileManagerHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = FileManagerHandler.swift; sourceTree = "<group>"; };
 		82CC8186459437EB259B60A9B7D51734 /* Pods-AssertRequest_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AssertRequest_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		8F4D19A7827468B0299A9689C28982D9 /* URLSessionDataTaskWithRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskWithRequest.swift; sourceTree = "<group>"; };
 		90B4220F82E806B52F7DF2B03DAE6936 /* AssertRequest-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AssertRequest-dummy.m"; sourceTree = "<group>"; };
@@ -96,8 +96,8 @@
 		9ECFFFB7C7ABAC63DAE3903E5E730EDB /* AssertRequest.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AssertRequest.modulemap; sourceTree = "<group>"; };
 		A38E706228C1456E5E5158AC4417DA6B /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		A99C71D9AD2443206F1CE4D46634957F /* Pods-AssertRequest_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AssertRequest_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AAABC03C0A3D0FC51A8A6BB1C3106966 /* RequestCollector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCollector.swift; path = AssertRequest/Classes/RequestCollector.swift; sourceTree = "<group>"; };
-		ACC01A059C6D55FAAEFC0DDBA153B151 /* DataRequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DataRequestInterceptor.swift; path = AssertRequest/Classes/DataRequestInterceptor.swift; sourceTree = "<group>"; };
+		AAABC03C0A3D0FC51A8A6BB1C3106966 /* RequestCollector.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestCollector.swift; sourceTree = "<group>"; };
+		ACC01A059C6D55FAAEFC0DDBA153B151 /* DataRequestInterceptor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DataRequestInterceptor.swift; sourceTree = "<group>"; };
 		ACD0CABA79F25352657182F8439FE382 /* Pods-AssertRequest_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AssertRequest_Tests.modulemap"; sourceTree = "<group>"; };
 		AECEDE3BFBE7CAE1665AF2A0A21A7D12 /* Pods-AssertRequest_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AssertRequest_Tests-Info.plist"; sourceTree = "<group>"; };
 		BD021E735F6BBDAFC445AF172E1778EC /* RequestIdentifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RequestIdentifier.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 		DCD6BFCD55ADF8FB0AD9EF4A1E24371C /* Pods-AssertRequest_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AssertRequest_Example-Info.plist"; sourceTree = "<group>"; };
 		DE715C1F6DC54C830AB047CC1A4035B1 /* AssertRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AssertRequest.swift; sourceTree = "<group>"; };
 		E45914C992F50DB3C7782FBA53DBB253 /* Pods-AssertRequest_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AssertRequest_Tests-dummy.m"; sourceTree = "<group>"; };
-		E60C973A4C3F6B5363962F3361CFA6FA /* cURL+Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "cURL+Request.swift"; sourceTree = "<group>"; };
+		EA2A266F2618EC7E00F00377 /* InternalError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalError.swift; sourceTree = "<group>"; };
 		EAA961AD26129B5100301AD1 /* URLSessionUploadTaskFromFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionUploadTaskFromFile.swift; sourceTree = "<group>"; };
 		EAA961B526129C4700301AD1 /* URLSessionUploadTaskFromBodyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionUploadTaskFromBodyData.swift; sourceTree = "<group>"; };
 		EAA961BA26129D1100301AD1 /* URLSessionUploadTaskWithStreamedRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionUploadTaskWithStreamedRequest.swift; sourceTree = "<group>"; };
@@ -216,10 +216,8 @@
 		60402D3A9361E5FCE420B3F7110AC85D /* AssertRequest */ = {
 			isa = PBXGroup;
 			children = (
-				ACC01A059C6D55FAAEFC0DDBA153B151 /* DataRequestInterceptor.swift */,
-				3A3B405FD584D183197F9FE8FA0F6958 /* Differ.swift */,
-				804C07BFB352728CC2D7A8966474E898 /* FileManagerHandler.swift */,
-				AAABC03C0A3D0FC51A8A6BB1C3106966 /* RequestCollector.swift */,
+				EAE5A9242618E35F00E64C9F /* Diff */,
+				EAE5A91D2618E32900E64C9F /* RequestIntercept */,
 				7B70CBCE64AA5BC850EF307150B6BF7B /* Error */,
 				29CAF3858290CBA59C35ACACE0A38018 /* Model */,
 				A8496E3BE2B81AE82B90DED743DFB4F4 /* Pod */,
@@ -235,7 +233,7 @@
 		750C188E68EDA1A62E2AB27FB7713B3A /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				E60C973A4C3F6B5363962F3361CFA6FA /* cURL+Request.swift */,
+				804C07BFB352728CC2D7A8966474E898 /* FileManagerHandler.swift */,
 			);
 			name = Utility;
 			path = AssertRequest/Classes/Utility;
@@ -246,6 +244,7 @@
 			children = (
 				30E75798CF99C9D8CF2477B4A2E617D3 /* FileError.swift */,
 				F7BB1D68D3B458609344CA87A5E1ECBE /* HTTPRequestParsingError.swift */,
+				EA2A266F2618EC7E00F00377 /* InternalError.swift */,
 			);
 			name = Error;
 			path = AssertRequest/Classes/Error;
@@ -341,6 +340,23 @@
 			);
 			name = Session;
 			path = AssertRequest/Classes/Session;
+			sourceTree = "<group>";
+		};
+		EAE5A91D2618E32900E64C9F /* RequestIntercept */ = {
+			isa = PBXGroup;
+			children = (
+				AAABC03C0A3D0FC51A8A6BB1C3106966 /* RequestCollector.swift */,
+				ACC01A059C6D55FAAEFC0DDBA153B151 /* DataRequestInterceptor.swift */,
+			);
+			path = RequestIntercept;
+			sourceTree = "<group>";
+		};
+		EAE5A9242618E35F00E64C9F /* Diff */ = {
+			isa = PBXGroup;
+			children = (
+				3A3B405FD584D183197F9FE8FA0F6958 /* Differ.swift */,
+			);
+			path = Diff;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,7 +522,6 @@
 				16D715CEAC21DC70009A166B6823ACB9 /* AssertRequest-dummy.m in Sources */,
 				93355D3BBFE61B9248D742FC59FC0004 /* AssertRequest.swift in Sources */,
 				EAA961C026129DE200301AD1 /* URLSessionUploadTaskWithCompletionFromFile.swift in Sources */,
-				7B58F76AF774138ED89EC9D526A2F215 /* cURL+Request.swift in Sources */,
 				721EEFEEAE93340680278A6E70D7C61E /* DataRequestInterceptor.swift in Sources */,
 				B0CA0B63771A0062CA1C22D0BD349E9E /* Diffable.swift in Sources */,
 				696C6B7C974C84639F8581FA6CAA6722 /* Differ.swift in Sources */,
@@ -530,6 +545,7 @@
 				0D65EAD267D39AB3DDD819C0D1389544 /* URLSessionDataTaskWithURLCompletion.swift in Sources */,
 				8A7BC5219273FCD7EBD585E584C900F0 /* URLSessionUploadTaskWithCompletion.swift in Sources */,
 				EAA961B626129C4700301AD1 /* URLSessionUploadTaskFromBodyData.swift in Sources */,
+				EA2A26702618EC7E00F00377 /* InternalError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

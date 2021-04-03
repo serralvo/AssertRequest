@@ -14,7 +14,7 @@ struct Request: Codable {
         
         guard let httpMethodString = urlRequest.httpMethod,
               let httpMethod = HTTPMethod(rawValue: httpMethodString) else {
-            throw HTTPRequestParsingError.noURL
+            throw HTTPRequestParsingError.noHTTPMethod
         }
         method = httpMethod
         

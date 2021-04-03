@@ -6,6 +6,6 @@ class DataRequestInterceptor {
         if let data = bodyData {
             request.httpBody = data
         }
-        Session.default.collector?.append(urlRequest: request)
+        Session.default.collector.append(urlRequest: request)
     }
 }

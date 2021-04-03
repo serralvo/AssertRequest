@@ -1,15 +1,15 @@
 class RequestCollector {
     
-    private var requests: [Diffable] = []
+    private(set) var requests: [Diffable] = []
+    private(set) var errors: [Error] = []
     private let fileManager = FileManagerHandler()
-
-    private let identifier: RequestIdentifier
     
-    init(identifier: RequestIdentifier) {
-        self.identifier = identifier
-    }
+    var identifier: RequestIdentifier?
     
     func append(urlRequest: URLRequest) {
+        guard let identifier = self.identifier else {
+            return registerError(error: InternalError.noIdentifierSetOnCollector)
+        }
         do {
             let request = try Request(urlRequest: urlRequest)
             
@@ -20,14 +20,8 @@ class RequestCollector {
                 )
             )
         } catch {
-            //todo: handle
-            print(error.localizedDescription)
-            return
+            return registerError(error: error)
         }
-    }
-    
-    func get() -> [Diffable] {
-        return requests
     }
     
     func clear() throws {
@@ -36,5 +30,10 @@ class RequestCollector {
             return
         }
         requests.removeAll()
+        errors.removeAll()
+    }
+    
+    func registerError(error: Error) {
+        errors.append(error)
     }
 }
