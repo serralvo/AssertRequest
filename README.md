@@ -23,7 +23,7 @@ You might consider using Assert Request when:
 
 When an AssertRequest session is created, several methods related to making network requests are changed by the framework's counterpart using [method swizzling](https://abhimuralidharan.medium.com/method-swizzling-in-ios-swift-1f38edaf984f). So when your test calls something like `URLSession.shared.dataTask(with:completionHandler:)`, the call will be intercepted by the framework, so it can analyze the requests made and generate the test result. The actual method from `URLSession` will never be called, so no requests will be made.
 
-Before using, it is important to understand what methods your app uses for making requests to the network. If it uses methods that are not swizzled by the framework, it will not work. Check out the session [Funcionalities](#funcionalities), to know what methods are supported. If your case is not covered, feel free to contribute! Check the session [Swizzling new methods](#swizzling-new-methods) and [Contributing](#Contributing) to learn how to do it.
+Before using, it is important to understand what methods your app uses for making requests to the network. If it uses methods that are not swizzled by the framework, it will not work. Check out the session [Funcionalities](#funcionalities), to know what methods are supported. If your case is not covered, feel free to contribute! Check the session [Swizzling new methods](#swizzling-a-new-method) and [Contributing](#Contributing) to learn how to do it.
 
 ## Example
 
@@ -140,7 +140,7 @@ To see all the specific methods that are available check the [Swizzling](AssertR
 
 This is an open-source project and everyone is welcome more than welcome to contribute! Just, fork this repo and open a Pull Request. Be wary that it is expected that your contributing code follows good practices, and improvements may be requested on code review. And feel free to create issues relating bugs, improvements, or feature requests.
 
-If you want to add more methods to be swizzled, check out the session [Swizzling new methods](#swizzling-new-methods).
+If you want to add more methods to be swizzled, check out the session [Swizzling new methods](#swizzling-a-new-method).
 
 ## Swizzling a new method
 
