@@ -30,16 +30,18 @@ Before using, it is important to understand what methods your app uses for makin
 Consider that you want to test some function that look like this:
 
 ```swift
-func foo() {
-            let url = URL(string: "https://jsonplaceholder.typicode.com/posts/\(post)")!
+func performSomeRequest() {
+
+    let url = URL(string: "https://jsonplaceholder.typicode.com/posts/\(post)")!
         
-        let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
-            let retrievedData = String(data: data ?? Data(), encoding: .utf8) ?? ""
-            DispatchQueue.main.async {
-                self.resultTextView?.text = retrievedData
-            }
+    let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
+        let retrievedData = String(data: data ?? Data(), encoding: .utf8) ?? ""
+        DispatchQueue.main.async {
+            self.resultTextView?.text = retrievedData
         }
-        task.resume()
+    }
+    
+    task.resume()
 }
 ```
 
@@ -55,7 +57,7 @@ class Tests: XCTestCase {
     func myTest() {
         AssertRequest.startObserving(recording: true)
 
-        ViewController().foo()
+        ViewController().performSomeRequest()
 
         AssertRequest.assert()
     }
